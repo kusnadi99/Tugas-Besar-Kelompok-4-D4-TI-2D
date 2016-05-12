@@ -25,7 +25,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   $http.get('js/data.json').success(function(data) {
     //update app.js
     $scope.binatang = data.binatang;
-    
+    $scope.onItemDelete = function(item){
+      
+    }
   });
 }])
 
