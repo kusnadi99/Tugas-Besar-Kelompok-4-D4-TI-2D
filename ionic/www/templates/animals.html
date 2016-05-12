@@ -43,7 +43,7 @@
           <h2>{{item.asal}}</h2>
           <h2>{{item.tinggi}}</h2>
           <p>{{item.keterangan}}</p>
-          <ion-delete-button class="ion-minus-circled">        
+          <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(item)">        
         </ion-item>
       </ion-list>
     </ion-content>
