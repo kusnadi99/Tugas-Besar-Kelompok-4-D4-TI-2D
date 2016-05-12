@@ -26,7 +26,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     //update app.js
     $scope.binatang = data.binatang;
     $scope.onItemDelete = function(item){
-      
+      $scope.binatang.splice($scope.binatang.indexOf(item), 1);
     }
   });
 }])
