@@ -139,12 +139,12 @@ angular.module('starter.controllers', [])
     }else if(!bukuTamu.email){
       $scope.showAlert({
         title: "Information",
-        message: "Alamat Mohon Diisi"
+        message: "Email Mohon Diisi"
       });
     }else if(!bukuTamu.alamat){
       $scope.showAlert({
         title: "Information",
-        message: "Spesialis Mohon Diisi"
+        message: "Alamat Mohon Diisi"
       });
     }else{
       bukuService.ubah({
