@@ -121,6 +121,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             });
         },
 
+  function (id){
+            return $http.delete(baseUrl+'hapus/?id='+id);
+        }
+    };
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
