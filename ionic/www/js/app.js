@@ -105,27 +105,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 
-  function (bukuTamu){
-            return $http.post(baseUrl+'simpan',bukuTamu,{
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8;'
-                }
-            });
-        },
-
-  function (bukuTamu){
-            return $http.put(baseUrl+'ubah',bukuTamu,{
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8;'
-                }
-            });
-        },
-
-  function (id){
-            return $http.delete(baseUrl+'hapus/?id='+id);
-        }
-    };
-
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
